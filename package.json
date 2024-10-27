@@ -1,0 +1,40 @@
+{
+  "name": "xollaborator.github.io",
+  "description": "xollaborator",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "lift": "pnpm -g add pnpm && pnpm install",
+    "dev": "astro dev --host",
+    "lint": "prettier . --log-level warn --write",
+    "upgrade": "pnpm up -i -L",
+    "build": "astro build",
+    "preview": "astro preview",
+    "generate-pwa-assets": "pwa-assets-generator"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "3.1.8",
+    "@astrojs/partytown": "2.1.2",
+    "@astrojs/sitemap": "3.2.1",
+    "@astrojs/tailwind": "5.1.2",
+    "@iconify-json/mdi": "1.2.1",
+    "@tailwindcss/typography": "0.5.15",
+    "@types/node": "22.8.1",
+    "@vite-pwa/assets-generator": "0.2.6",
+    "@vite-pwa/astro": "0.4.3",
+    "astro": "4.16.7",
+    "astro-compress": "2.3.5",
+    "astro-icon": "1.1.1",
+    "astro-seo": "0.8.4",
+    "prettier": "3.3.3",
+    "prettier-plugin-astro": "0.14.1",
+    "prettier-plugin-tailwindcss": "0.6.8",
+    "sharp": "0.33.5",
+    "tailwind-merge": "2.5.4",
+    "tailwindcss": "3.4.14",
+    "tailwindcss-animate": "1.0.7",
+    "typescript": "5.6.3",
+    "vite-plugin-pwa": "0.20.5"
+  }
+}
