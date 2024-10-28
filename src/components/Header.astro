@@ -9,38 +9,38 @@ const { pageId, title } = Astro.props
 
 <header class="flex w-full items-center justify-center p-5">
   <a
-    href="/"
-    class="absolute left-5 top-5 hover:scale-105"
     aria-label="Logo - Xollaborator - Kris Konopka"
+    class="absolute left-5 top-5 hover:scale-105"
+    href="/"
   >
     <div class="w-24 md:w-32">
       <svg
+        fill="none"
         id="logo"
         viewBox="0 0 122 61"
-        fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          id="center"
           d="M67.0649 5.45355L85.4239 23.8126C88.8411 27.2298 88.8411 32.7703 85.4239 36.1875L67.0649 54.5465C63.6476 57.9638 58.1072 57.9638 54.69 54.5465L36.3309 36.1875C32.9137 32.7703 32.9137 27.2298 36.3309 23.8126L54.69 5.45355C58.1072 2.03632 63.6476 2.03632 67.0649 5.45355Z"
           fill="#FFC300"
+          id="center"
           stroke="currentColor"
           stroke-width="4"></path>
         <path
-          id="right"
           d="M96.4218 3.93318L117.822 25.3329C120.399 27.9105 120.399 32.0895 117.822 34.6671L96.4218 56.0668C93.8442 58.6444 89.6652 58.6444 87.0876 56.0668L61.0208 30L87.0876 3.93318C89.6652 1.35561 93.8442 1.35561 96.4218 3.93318Z"
           fill="#995BD5"
+          id="right"
           stroke="currentColor"
           stroke-width="4"></path>
         <path
-          id="left"
           d="M34.6671 3.93318L60.7339 30L34.6671 56.0668C32.0895 58.6444 27.9105 58.6444 25.3329 56.0668L3.93318 34.6671C1.35561 32.0895 1.35561 27.9105 3.93318 25.3329L25.3329 3.93318C27.9105 1.35561 32.0895 1.35561 34.6671 3.93318Z"
           fill="#8EDF34"
+          id="left"
           stroke="currentColor"
           stroke-width="4"></path>
         <path
-          id="center-stroke"
           d="M67.0648 5.45355L85.4239 23.8126C88.8411 27.2298 88.8411 32.7703 85.4239 36.1875L67.0648 54.5465C63.6476 57.9638 58.1072 57.9638 54.6899 54.5465L36.3309 36.1875C32.9137 32.7703 32.9137 27.2298 36.3309 23.8126L54.6899 5.45355C58.1072 2.03632 63.6476 2.03632 67.0648 5.45355Z"
+          id="center-stroke"
           stroke="currentColor"
           stroke-width="4"></path>
       </svg>
@@ -49,7 +49,7 @@ const { pageId, title } = Astro.props
 
   <h1
     class="mb-8 mt-20 text-center text-xl font-semibold lg:mt-8"
-    transition:name={'title:' + pageId}
+    transition:name={`title:${pageId}`}
   >
     {title ?? ''}
   </h1>

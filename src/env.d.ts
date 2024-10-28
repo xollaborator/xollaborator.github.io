@@ -1,3 +1,4 @@
+/* eslint-disable ts/consistent-type-imports */
 /// <reference path="../.astro/types.d.ts" />
 /// <reference types="astro/client" />
 /// <reference types="vite-plugin-pwa/info" />

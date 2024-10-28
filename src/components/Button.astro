@@ -4,15 +4,15 @@ import { twMerge } from 'tailwind-merge'
 export interface Props {
   class?: string
   primary?: boolean
-  to?: string
   submit?: boolean
+  to?: string
 }
 
 const {
-  to,
   class: additionalClass,
   primary = false,
   submit = false,
+  to,
 } = Astro.props
 
 const classes = twMerge(
@@ -30,7 +30,7 @@ const classes = twMerge(
       <slot />
     </a>
   ) : (
-    <button type={submit ? 'submit' : 'button'} class={classes}>
+    <button class={classes} type={submit ? 'submit' : 'button'}>
       <slot />
     </button>
   )

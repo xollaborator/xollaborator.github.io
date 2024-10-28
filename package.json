@@ -1,9 +1,9 @@
 {
   "name": "xollaborator.github.io",
-  "description": "xollaborator",
-  "private": true,
   "type": "module",
   "version": "0.1.0",
+  "private": true,
+  "description": "xollaborator",
   "scripts": {
     "lift": "pnpm -g add pnpm && pnpm install",
     "dev": "astro dev --host",
