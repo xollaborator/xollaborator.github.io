@@ -1,0 +1,7 @@
+alias add="pnpm add -E"
+alias lift="pnpm run lift"
+alias dev="pnpm run dev"
+alias lint="pnpm run lint"
+alias build="pnpm run build"
+alias upgrade="pnpm run upgrade"
+alias preview="pnpm run preview"
