@@ -7,7 +7,7 @@
   "scripts": {
     "lift": "pnpm -g add pnpm && pnpm install",
     "dev": "astro dev --host",
-    "lint": "prettier . --log-level warn --write",
+    "lint": "prettier . --log-level warn --write && eslint . --fix",
     "upgrade": "pnpm up -i -L",
     "build": "astro build",
     "preview": "astro preview",
