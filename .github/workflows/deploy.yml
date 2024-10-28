@@ -12,6 +12,7 @@ permissions:
 
 jobs:
   build:
+    if: "${{ contains(github.event.commits.*.message, 'build: release') }}"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
