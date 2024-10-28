@@ -1,0 +1,37 @@
+---
+import { twMerge } from 'tailwind-merge'
+
+export interface Props {
+  class?: string
+  primary?: boolean
+  to?: string
+  submit?: boolean
+}
+
+const {
+  to,
+  class: additionalClass,
+  primary = false,
+  submit = false,
+} = Astro.props
+
+const classes = twMerge(
+  'rounded-full border border-neutral-800 dark:border-neutral-200 px-6 py-2 font-bold hover:scale-105 hover:border-neutral-700 dark:hover:border-neutral-100 text-center',
+  primary
+    ? 'bg-neutral-800 dark:bg-neutral-200 text-neutral-50 dark:text-neutral-950 hover:bg-neutral-900 dark:hover:bg-neutral-100'
+    : 'text-neutral-800 hover:text-neutral-700 dark:text-neutral-200 dark:hover:text-neutral-100',
+  additionalClass
+)
+---
+
+{
+  to ? (
+    <a class={classes} href={to}>
+      <slot />
+    </a>
+  ) : (
+    <button type={submit ? 'submit' : 'button'} class={classes}>
+      <slot />
+    </button>
+  )
+}
