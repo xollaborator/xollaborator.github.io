@@ -1,4 +1,5 @@
 import antfu from '@antfu/eslint-config'
+import promise from 'eslint-plugin-promise'
 
 export default antfu(
   {
@@ -61,5 +62,7 @@ export default antfu(
         ],
       },
     },
+
+    promise.configs['flat/recommended'],
   ]
 )
